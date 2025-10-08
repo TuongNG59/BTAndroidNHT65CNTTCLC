@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,10 +15,12 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Button bSayhi, bSayhello;
+    TextView tResult;
 
     void TimDK() {
         bSayhi = findViewById(R.id.btnSayHi);
         bSayhello = findViewById(R.id.btnSayHello);
+        tResult = findViewById(R.id.txtResult);
     }
 
 
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         bSayhello.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                tResult.setText("Chào");
             }
         });
 
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             bSayhi.setOnClickListener(ngheSayhi);
-
+            tResult.setText("Hi");
         }
     };
 
