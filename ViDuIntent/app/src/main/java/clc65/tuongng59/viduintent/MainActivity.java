@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     String data = edHoTen.getText().toString();
                     //2.2. Goi vao iChuyen2, dung putExtra(key, value)
                     iChuyen2.putExtra("ht", data);
+                    iChuyen2.putExtra("copyright", "NHT");
                 //3. Kich hoat man hinh 2
                 startActivity(iChuyen2);
             }
