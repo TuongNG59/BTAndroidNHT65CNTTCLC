@@ -27,7 +27,7 @@
             android:layout_width="405dp"
             android:layout_height="200dp"
             android:layout_marginBottom="523dp"
-            android:background="@mipmap/Rectangle_2"
+            android:background="@mipmap/rectangle_2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -46,7 +46,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-            app:srcCompat="@mipmap/avatar" />
+            app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+            app:srcCompat="@mipmap/avatar"/>
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -278,7 +279,7 @@
                 android:layout_height="150dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
-                app:srcCompat="@mipmap/Photos_1" />
+                app:srcCompat="@mipmap/photos_1" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -286,7 +287,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="5dp"
-                app:srcCompat="@mipmap/Photos_2" />
+                app:srcCompat="@mipmap/photos_2" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -294,7 +295,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="5dp"
-                app:srcCompat="@mipmap/Photos_3" />
+                app:srcCompat="@mipmap/photos_3" />
 
         </LinearLayout>
 
