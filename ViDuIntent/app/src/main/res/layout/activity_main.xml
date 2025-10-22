@@ -7,13 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/edHoTen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="260dp"
+        android:drawableStart="@android:drawable/sym_action_email"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="100dp" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Send"
+        app:layout_constraintTop_toBottomOf="@+id/edHoTen"
+        tools:layout_editor_absoluteX="160dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="179dp"
+        android:layout_marginBottom="62dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/edHoTen"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="96dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
