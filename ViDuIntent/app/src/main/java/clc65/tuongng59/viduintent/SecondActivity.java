@@ -25,6 +25,7 @@ public class SecondActivity extends AppCompatActivity {
         //3. Xử lý
             //Set lên textivew
 
+
         //Nút Back
         Button buttonBack = findViewById(R.id.btnBack);
         buttonBack.setOnClickListener(new View.OnClickListener() {
