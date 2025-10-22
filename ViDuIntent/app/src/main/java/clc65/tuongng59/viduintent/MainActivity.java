@@ -1,6 +1,10 @@
 package clc65.tuongng59.viduintent;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,5 +19,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button nutChuyen2 = findViewById(R.id.btnChuyenSang2);
+        nutChuyen2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Code chuyen man hinh
+                //1. Tao intent
+                Intent iChuyen2 = new Intent(MainActivity.this, SecondActivity.class);
+                //2. Goi du lieu vao iChuyen2
+                    //2.1 lay du lieu
+                    EditText edHoTen = findViewById(R.id.edHoTen);
+                    String data = edHoTen.getText().toString();
+                    //2.2. Goi vao iChuyen2, dung putExtra(key, value)
+                    iChuyen2.putExtra("ht", data);
+                //3. Kich hoat man hinh 2
+                startActivity(iChuyen2);
+            }
+        });
     }
 }
