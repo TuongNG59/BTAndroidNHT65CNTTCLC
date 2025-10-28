@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnTapGK">
         <activity
+            android:name=".Item3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Item4Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityAboutMe"
             android:exported="false" />
         <activity
@@ -26,6 +32,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
