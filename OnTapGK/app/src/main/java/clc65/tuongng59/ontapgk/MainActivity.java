@@ -1,6 +1,7 @@
 package clc65.tuongng59.ontapgk;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,15 +11,37 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button btnCN2, btnCN3, btnCN4, btnAbout, btnThem;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        btnCN2 = findViewById(R.id.btnCN2);
+        btnCN3 = findViewById(R.id.btnCN3);
+        btnCN4 = findViewById(R.id.btnCN4);
+        btnAbout = findViewById(R.id.btnAbout);
+        btnThem = findViewById(R.id.btnThem);
+
+        btnCN2.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, Activity2.class))
+        );
+
+        btnCN3.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, Activity3.class))
+        );
+
+        btnCN4.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, Activity4.class))
+        );
+
+        btnAbout.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ActivityAboutMe.class))
+        );
+
+        btnThem.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ActivityLamThem.class))
+        );
     }
 }
