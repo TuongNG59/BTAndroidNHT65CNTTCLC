@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MainActivityAboutMe.class))
         );
 
-        //btnThem.setOnClickListener(v ->
-        //        startActivity(new Intent(MainActivity.this, MainActivityLamThem.class))
-        //);
+        btnThem.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, MainActivityLamThem.class))
+        );
     }
 }

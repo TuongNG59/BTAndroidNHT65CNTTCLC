@@ -17,6 +17,7 @@
         <activity
             android:name=".Item4Activity"
             android:exported="false" />
+        <activity android:name=".MainActivityLamThem" android:exported="false"/>
         <activity
             android:name=".MainActivityAboutMe"
             android:exported="false" />
