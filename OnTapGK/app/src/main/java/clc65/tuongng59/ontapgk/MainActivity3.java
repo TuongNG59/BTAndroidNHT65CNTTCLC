@@ -33,7 +33,6 @@ public class MainActivity3 extends AppCompatActivity {
 
         lvMonHoc = findViewById(R.id.lvMonHoc);
 
-        // 1️⃣ Tải danh sách dữ liệu từ file assets/list.json
         dsMonHoc = loadMonHocFromAssets();
 
         if (dsMonHoc.isEmpty()) {

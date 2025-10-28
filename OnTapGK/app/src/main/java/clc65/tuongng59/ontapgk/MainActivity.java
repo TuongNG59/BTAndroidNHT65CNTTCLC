@@ -1,5 +1,6 @@
 package clc65.tuongng59.ontapgk;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -25,23 +26,23 @@ public class MainActivity extends AppCompatActivity {
         btnThem = findViewById(R.id.btnThem);
 
         btnCN2.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, Activity2.class))
+                startActivity(new Intent(MainActivity.this, MainActivity2.class))
         );
 
         btnCN3.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, Activity3.class))
+                startActivity(new Intent(MainActivity.this, MainActivity3.class))
         );
 
         btnCN4.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, Activity4.class))
+                startActivity(new Intent(MainActivity.this, MainActivity4.class))
         );
 
         btnAbout.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, ActivityAboutMe.class))
+                startActivity(new Intent(MainActivity.this, MainActivityAboutMe.class))
         );
 
         btnThem.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, ActivityLamThem.class))
+                startActivity(new Intent(MainActivity.this, MainActivityLamThem.class))
         );
     }
 }
