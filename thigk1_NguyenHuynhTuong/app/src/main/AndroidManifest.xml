@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thigk1_NguyenHuynhTuong">
         <activity
+            android:name=".MainActivityLamThem"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityAboutMe"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
