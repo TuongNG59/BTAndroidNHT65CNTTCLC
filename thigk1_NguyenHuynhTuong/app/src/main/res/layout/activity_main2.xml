@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:letterSpacing="0.03"
-            android:text="Tính điểm trung bình môn học"
+            android:text="Diện tích sàn"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
