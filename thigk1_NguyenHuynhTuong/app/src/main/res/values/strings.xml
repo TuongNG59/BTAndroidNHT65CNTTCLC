@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">thigk1_NguyenHuynhTuong</string>
+    <string name="app_name">OnTap_ThiGiuaKy</string>
+
+    <string name="desc_logo_ntu">Logo trường Đại học Nha Trang</string>
+    <string name="main_title">Chương trình ôn tập giữa kỳ</string>
+    <string name="main_subtitle">Chọn chức năng:</string>
+    <string name="btn_cn2">Tính diện tích</string>
+    <string name="btn_cn3">Vật liệu</string>
+    <string name="btn_cn4">Công trình</string>
+    <string name="btn_about">Giới thiệu</string>
+    <string name="btn_bonus">Làm thêm</string>
 </resources>
