@@ -18,6 +18,9 @@
             android:name=".VLdetailActivity"
             android:exported="false" />
         <activity
+            android:name=".CTdetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity4"
             android:exported="false" />
         <activity
