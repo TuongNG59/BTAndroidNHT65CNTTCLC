@@ -40,8 +40,6 @@ public class MainActivity3 extends AppCompatActivity {
             Toast.makeText(this, "Không thể tải dữ liệu môn học", Toast.LENGTH_SHORT).show();
             dsVatLieu.add("Lỗi tải file JSON");
         }
-
-        // 2️⃣ Adapter (Đã đúng)
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
                 R.layout.item_sub_list_view,
@@ -50,18 +48,17 @@ public class MainActivity3 extends AppCompatActivity {
         );
         lvVatLieu.setAdapter(adapter);
 
-        // 3️⃣ Sự kiện click vào 1 môn học (Không đổi)
         lvVatLieu.setOnItemClickListener((AdapterView<?> parent, android.view.View view, int position, long id) -> {
-            String monHoc = dsVatLieu.get(position);
+            String vatLieu = dsVatLieu.get(position);
 
             Intent intent = new Intent(MainActivity3.this, VLdetailActivity.class);
-            intent.putExtra("tenMon", monHoc);
+            intent.putExtra("tenVatLieu", vatLieu);
             startActivity(intent);
         });
     }
 
     private ArrayList<String> loadMonHocFromAssets() {
-        ArrayList<String> monHocList = new ArrayList<>();
+        ArrayList<String> vatLieuList = new ArrayList<>();
         String jsonString;
 
         try {
@@ -74,21 +71,21 @@ public class MainActivity3 extends AppCompatActivity {
 
         } catch (IOException e) {
             e.printStackTrace();
-            return monHocList;
+            return vatLieuList;
         }
 
         try {
             JSONArray jsonArray = new JSONArray(jsonString);
 
             for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject monHocObject = jsonArray.getJSONObject(i);
-                String tenMon = monHocObject.getString("tenMon");
-                monHocList.add(tenMon);
+                JSONObject vatLieuObject = jsonArray.getJSONObject(i);
+                String tenVatLieu = vatLieuObject.getString("tenVatLieu");
+                vatLieuList.add(tenVatLieu);
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        return monHocList;
+        return vatLieuList;
     }
 }
