@@ -42,7 +42,6 @@
             app:layout_constraintTop_toTopOf="@id/iv_logo_cn2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Nội dung chính -->
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -66,7 +65,6 @@
             android:orientation="vertical"
             android:padding="24dp">
 
-            <!-- Giữa kỳ -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
@@ -87,7 +85,6 @@
                     android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Cuối kỳ -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
@@ -109,7 +106,6 @@
                     android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Nút tính -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnTinhDT"
                 android:layout_width="match_parent"
@@ -126,7 +122,6 @@
                 app:iconSize="50dp"
                 app:rippleColor="@color/teal" />
 
-            <!-- Kết quả -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
