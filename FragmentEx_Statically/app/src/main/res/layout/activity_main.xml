@@ -16,7 +16,7 @@
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    
+
     <fragment
         android:id="@+id/frgChanTrang"
         android:name="clc65.tuongng59.nguyenhuynhtuong.fragmentex_statically.FooterFragment"
