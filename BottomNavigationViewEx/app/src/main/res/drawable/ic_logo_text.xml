@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <!-- Vòng tròn viền nâu -->
+    <path
+        android:pathData="M150,10
+                         A140,140 0 1,1 149.9,10"
+        android:strokeColor="#7B2C14"
+        android:strokeWidth="8"
+        android:fillColor="#00000000" />
+
+    <!-- Chữ 123 màu xanh -->
+    <group android:translateX="85" android:translateY="90">
+        <path
+            android:fillColor="#2EA443"
+            android:pathData="M0,0 L40,0 L40,10 L20,10 L20,20 L40,20 L40,30 L0,30 L0,20 L20,20 L20,10 L0,10 Z" />
+    </group>
+
+    <!-- Chữ TiiL màu xanh đậm -->
+    <group android:translateX="80" android:translateY="160" android:scaleX="1.2" android:scaleY="1.2">
+        <!-- T -->
+        <path android:fillColor="#043D3E"
+            android:pathData="M0,0 L40,0 L40,10 L25,10 L25,40 L15,40 L15,10 L0,10 Z" />
+        <!-- i -->
+        <path android:fillColor="#043D3E"
+            android:translateX="45"
+            android:pathData="M0,0 L10,0 L10,30 L0,30 Z M4,35 A4,4 0 1,0 12,35 A4,4 0 1,0 4,35" />
+        <!-- i -->
+        <path android:fillColor="#043D3E"
+            android:translateX="65"
+            android:pathData="M0,0 L10,0 L10,30 L0,30 Z M4,35 A4,4 0 1,0 12,35 A4,4 0 1,0 4,35" />
+        <!-- L -->
+        <path android:fillColor="#043D3E"
+            android:translateX="85"
+            android:pathData="M0,0 L10,0 L10,30 L30,30 L30,40 L0,40 Z" />
+    </group>
+
+</vector>

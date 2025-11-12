@@ -1,9 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.BottomNavigationViewEx" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.BottomNavigationView_Ex" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Màu chủ đạo -->
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary_dark</item>
+        <item name="colorOnPrimary">@color/brand_on_primary</item>
+
+        <!-- Các màu khác -->
+        <item name="colorSecondary">@color/brand_secondary</item>
     </style>
 
-    <style name="Theme.BottomNavigationViewEx" parent="Base.Theme.BottomNavigationViewEx" />
+    <style name="Theme.BottomNavigationView_Ex" parent="Base.Theme.BottomNavigationView_Ex" />
 </resources>
