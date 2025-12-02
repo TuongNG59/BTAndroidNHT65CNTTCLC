@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        
+
 //        Chuyển qua màn hình điểm
         btnScore.setOnClickListener(new View.OnClickListener() {
             @Override
