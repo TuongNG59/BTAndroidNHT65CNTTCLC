@@ -1,5 +1,6 @@
 package clc65.tuongng59.nguyenhuynhtuong.project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,29 +26,23 @@ public class MainActivity extends AppCompatActivity {
         btnScore = findViewById(R.id.btnScore);
 
 //        Chuyển qua màn hình chơi
-        btnPlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Chuyển qua PlayActivity
-            }
+        btnPlay.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, PlayActivity.class);
+            startActivity(intent);
         });
 
 
 //        Chuyển qua màn hình quản lý câu hỏi
-        btnManage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
+        btnManage.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, QuestionListActivity.class);
+            startActivity(intent);
         });
 
 
 //        Chuyển qua màn hình điểm
-        btnScore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
+        btnScore.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ScoreActivity.class);
+            startActivity(intent);
         });
     }
 
